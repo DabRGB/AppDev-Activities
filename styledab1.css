@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    height: 40px;
+    width: auto;
+    padding-left: 100px;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    color: #f4b400;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 50%;
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-content .hello {
+    color: #f4b400;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero-content .highlight {
+    color: #f4b400;
+}
+
+.hero-content .subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* new Buttons */
+
+.buttons {
+    text-align: center;
+    margin-left: -250px;
+}
+
+.buttons a {
+    display: inline-block;
+    width: 10em;
+    height: 3.5em;
+    position: relative;
+    border: 3px ridge #f4b400;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.5em; /* Centers text vertically */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttons a::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #000000;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.buttons a::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #000000;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.buttons a:hover::before, 
+.buttons a:hover::after {
+    transform: scale(0);
+}
+
+.buttons a:hover {
+    box-shadow: inset 0px 0px 25px #f1b309;
+}
+
+
+
+
+/* Buttons */
+
+/* .buttons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #f4b400;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #d39e00;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #f4b400;
+    color: #f4b400;
+}
+
+.btn-secondary:hover {
+    background-color: #f4b400;
+    color: #000;
+} */
+
+/* Buttons */
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.activities {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.activities h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.activity-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Glitch Button Styling */
+
+[class*="btn-glitch-"] {
+    display: inline-block;
+    font-family: "VT323", monospace;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(250, 250, 250);
+    padding: 10px 13px;
+    min-width: 175px;
+    line-height: 1.5em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-glitch-fill .text,
+.btn-glitch-fill .decoration {
+    display: inline-block;
+}
+
+.btn-glitch-fill .decoration {
+    float: right;
+}
+
+.btn-glitch-fill:hover,
+.btn-glitch-fill:focus {
+    animation-name: glitch;
+    animation-duration: 0.2s;
+    background-color: yellow;
+    color: rgb(255, 255, 255);
+    border: 1px solid yellow;
+}
+
+@keyframes glitch {
+    25% {
+        background-color: red;
+        transform: translateX(-10px);
+        letter-spacing: 10px;
+    }
+    35% {
+        background-color: green;
+        transform: translate(10px);
+    }
+    59% {
+        opacity: 0;
+    }
+    60% {
+        background-color: blue;
+        transform: translate(-10px);
+        filter: blur(5px);
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+
+/* Activities Section */
+
+/* .activities {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.activities h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.activities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activities ul li {
+    margin: 10px 0;
+}
+
+.activities ul li a {
+    color: #f4b400;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.activities ul li a:hover {
+    color: #d39e00;
+} */
