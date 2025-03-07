@@ -1,0 +1,89 @@
+/* Card Styling for Sections */
+.card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    border: 1px solid #f4b400;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(244, 180, 0, 0.5);
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4b400;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Courses List Container */
+.courses-list-container {
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    border: 1px solid #f4b400;
+    padding: 10px;
+    width: 90%; /* Adjust the width */
+    max-width: 800px; /* Set a maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Courses List Styling */
+.courses {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #000;
+}
+
+.courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#coursesList {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#coursesList li {
+    background-color: #1c1c1c;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #f4b400;
+    color: white;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+#coursesList li:hover {
+    background-color: #f4b400;
+    color: #000;
+    transform: scale(1.02);
+}
+
+.course-details {
+    display: block;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 5px;
+}
+

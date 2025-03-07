@@ -27,6 +27,39 @@ nav .logo img {
     height: 40px;
     width: auto;
     padding-left: 100px;
+    transition: opacity 0.3s ease;
+}
+
+nav .logo img:hover {
+    opacity: 0.8; /* Add hover effect to the logo */
+}
+
+nav .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}/* Navigation Bar Styles */
+nav {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    height: 40px;
+    width: auto;
+    padding-left: 100px;
+    transition: opacity 0.3s ease;
+}
+
+nav .logo img:hover {
+    opacity: 0.8; /* Add hover effect to the logo */
 }
 
 nav .nav-links {
@@ -46,10 +79,25 @@ nav .nav-links li a {
     font-size: 18px;
     padding: 5px 10px;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-nav .nav-links li a:hover {
-    color: #f4b400;
+nav .nav-links li a i {
+    font-size: 24px; /* Icon size */
+    margin-right: 8px; /* Space between icon and text (if any) */
+    transition: all 0.3s ease;
+}
+
+nav .nav-links li a:hover i {
+    color: #f4b400; /* Hover color for icons */
+    text-shadow: 0 0 10px #f4b400, 0 0 20px #f4b400; /* Glow effect on hover */
+}
+
+/* Active Page Glow Effect */
+nav .nav-links li a.active i {
+    color: #f4b400; /* Active icon color */
+    text-shadow: 0 0 10px #f4b400, 0 0 20px #f4b400; /* Glow effect for active icon */
 }
 
 /* Hero Section */

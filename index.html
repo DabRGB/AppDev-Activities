@@ -7,19 +7,23 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styledab1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="nav.js"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <img src="Images/Logo.png">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home" title="Home"><i class="fas fa-home"></i></a></li>
-            <li><a href="#activities" title="Activities"><i class="fas fa-tasks"></i></a></li>
-            <li><a href="#courses" title="Courses"><i class="fas fa-book"></i></a></li>
-        </ul>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+        <a href="index.html"> <!-- Link the logo to the landing page -->
+            <img src="Images/Logo.png" alt="Logo">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#activities" class="nav-link" title="Activities"><i class="fas fa-tasks"></i></a></li>
+        <li><a href="CourseListAcitivity3/activity3.html" class="nav-link" title="Course Lists"><i class="fas fa-book"></i></a></li>
+        <li><a href="SearchFeaturePIT1/pit1.html" class="nav-link" title="Search"><i class="fas fa-search"></i></a></li>
+    </ul>
+</nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -29,42 +33,58 @@
             <p class="subtitle">A Student in USTP </p>
             
             <div class="buttons">
-                <a href="#home" class="btn-nav">HOME</a>
+                <!-- <a href="#home" class="btn-nav">HOME</a> -->
                 <a href="#activities" class="btn-nav">MY ACTIVITIES</a>
-                <a href="#courses" class="btn-nav">COURSES</a> <!-- New button -->
+                <!-- <a href="SearchFeaturePIT1/pit1.html" class="btn-nav">COURSES</a> New button -->
+                <a href="SearchFeaturePIT1/pit1.html#about" class="btn-nav">ABOUT</a>
             </div>
         </div>
+
+
         <div class="hero-image">
             <img src="Images/Me.png" alt="Dave Clavite">
         </div>
     </section>
 
-    <!-- Activities Section -->
     <section class="activities" id="activities"> 
         <h2>My Activities</h2>
+        <!-- Activity 1 Button -->
         <div class="activity-buttons">
             <a href="HTMLActivity1/Actvity1.html" class="btn-glitch-fill">
                 <span class="text">Activity</span><span class="text-decoration"> [ 1 ]</span>
                 <span class="decoration">></span>
             </a>
+            <!-- Activity 2 Button -->
             <a href="CSSActivity2/Activity2.html" class="btn-glitch-fill">
                 <span class="text">Activity</span><span class="text-decoration"> [ 2 ]</span>
+                <span class="decoration">></span>
+            </a>
+            <!-- Activity 3 Button -->
+            <a href="CourseListAcitivity3/activity3.html" class="btn-glitch-fill">
+                <span class="text">Activity</span><span class="text-decoration"> [ 3 ]</span>
+                <span class="decoration">></span>
+            </a>
+            <!-- PIT 1 Button -->
+            <a href="SearchFeaturePIT1/pit1.html" class="btn-glitch-fill">
+                <span class="text">PIT</span><span class="text-decoration"> [ 1 ]</span>
                 <span class="decoration">></span>
             </a>
         </div>
     </section>
 
     <!-- Courses Taken Section -->
-<section class="courses" id="courses">
+<!-- <section class="courses" id="courses">
     <h2>Courses Taken</h2>
     <div class="input-container">
         <input type="text" id="searchBar" placeholder="Search for courses...">
         <button class="button" id="searchButton">Find</button>
     </div>
     <ul id="coursesList"></ul>
-</section>
+</section> -->
 
     <!-- Link to External JavaScript File -->
+
     <script src="courses.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
